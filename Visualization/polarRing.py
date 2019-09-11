@@ -14,7 +14,6 @@ class polarRing:
     def getFig(self):
         return self.figure
 
-
     def drawHeatMap(self, data, alpha1, alpha2):
 
         self.figure.clear()
@@ -29,8 +28,6 @@ class polarRing:
         # cmap.set_over("red")
         ims = []
         c = axes.pcolormesh(theta, r, data, cmap=cmap)
-
-
 
         self.figure.colorbar(c, ax=axes)
         axes.set_title('Velocity')
